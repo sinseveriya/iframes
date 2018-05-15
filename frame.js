@@ -13,16 +13,15 @@ var eventer = window[eventMethod];
 var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 var content = {};
 
-eventer(messageEvent, function (e) {
-    content.id = e.data;
-    console.log(content.id);
-}, false);
+// eventer(messageEvent, function (e) {
+//     content.id = e.data;
+//     console.log(content.id);
+// }, false);
 
 content.height = contentSize();
 var height = contentSize().toString();
 
 // window.parent.postMessage('here', '*');
-console.log('yandex.ru!!');
 
 // setTimeout(function () {
     console.log('content', content);
