@@ -8,10 +8,10 @@ function contentSize() {
     return height;
 };
 
-var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-var eventer = window[eventMethod];
-var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-var content = {};
+// var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+// var eventer = window[eventMethod];
+// var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+// var content = {};
 
 // eventer(messageEvent, function (e) {
 //     content.id = e.data;
@@ -25,5 +25,5 @@ var height = contentSize().toString();
 
 // setTimeout(function () {
     console.log('content', content);
-    parent.postMessage(height, '*');
+//     parent.postMessage(height, '*');
 // }, 0);
