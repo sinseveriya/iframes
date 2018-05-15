@@ -21,10 +21,10 @@ eventer(messageEvent, function (e) {
 content.height = contentSize();
 var height = contentSize().toString();
 
-window.parent.postMessage('here', '*');
+// window.parent.postMessage('here', '*');
 console.log('yandex.ru!!');
 
 // setTimeout(function () {
     console.log('content', content);
-    window.postMessage(height, '*');
+    parent.postMessage(height, '*');
 // }, 0);
