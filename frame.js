@@ -25,5 +25,5 @@ console.log('yandex.ru!!');
 
 // setTimeout(function () {
     console.log('content', content);
-    window.postMessage(content, '*');
+//     window.postMessage(content, '*');
 // }, 0);
