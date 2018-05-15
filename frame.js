@@ -21,6 +21,7 @@ eventer(messageEvent, function (e) {
 content.height = contentSize();
 
 window.parent.postMessage('here', 'https://yandex.ru');
+console.log('yandex.ru!!');
 
 // setTimeout(function () {
     console.log('content', content);
