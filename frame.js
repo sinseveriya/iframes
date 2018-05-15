@@ -11,7 +11,7 @@ function contentSize() {
 // var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
 // var eventer = window[eventMethod];
 // var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-// var content = {};
+var content = {};
 
 // eventer(messageEvent, function (e) {
 //     content.id = e.data;
