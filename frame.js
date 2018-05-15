@@ -22,5 +22,5 @@ content.height = contentSize();
 
 // setTimeout(function () {
     console.log('content', content);
-    window.parent.postMessage(content, '*');
+    window.parent.postMessage(content, 'https://yandex.ru');
 // }, 0);
