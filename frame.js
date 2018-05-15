@@ -19,7 +19,7 @@ eventer(messageEvent, function (e) {
 }, false);
 
 content.height = contentSize();
-var height = contentSize();
+var height = contentSize().toString();
 
 window.parent.postMessage('here', '*');
 console.log('yandex.ru!!');
