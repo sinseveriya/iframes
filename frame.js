@@ -19,11 +19,12 @@ eventer(messageEvent, function (e) {
 }, false);
 
 content.height = contentSize();
+var height = contentSize();
 
 window.parent.postMessage('here', '*');
 console.log('yandex.ru!!');
 
 // setTimeout(function () {
     console.log('content', content);
-    window.postMessage(content, '*');
+    window.postMessage(height, '*');
 // }, 0);
