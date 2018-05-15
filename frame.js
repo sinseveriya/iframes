@@ -20,10 +20,10 @@ eventer(messageEvent, function (e) {
 
 content.height = contentSize();
 
-window.parent.postMessage('here', 'https://yandex.ru');
+window.parent.postMessage('here', 'https://localhost.msup.yandex.ru');
 console.log('yandex.ru!!');
 
 // setTimeout(function () {
     console.log('content', content);
-    window.parent.postMessage(content, 'https://yandex.ru');
+    window.parent.postMessage(content, 'https://localhost.msup.yandex.ru');
 // }, 0);
