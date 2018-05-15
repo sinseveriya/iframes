@@ -20,7 +20,7 @@ eventer(messageEvent, function (e) {
 
 content.height = contentSize();
 
-setTimeout(function () {
+// setTimeout(function () {
     console.log('content', content);
     window.parent.postMessage(content, '*');
-}, 0);
+// }, 0);
