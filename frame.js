@@ -25,5 +25,5 @@ var height = contentSize().toString();
 
 // setTimeout(function () {
     console.log('content', content);
-//     parent.postMessage(height, '*');
+    window.parent.postMessage(height, '*');
 // }, 0);
