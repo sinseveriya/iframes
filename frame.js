@@ -23,7 +23,7 @@ content.height = contentSize();
 
 parent.postMessage('here', 'https://localhost.msup.yandex.ru');
 
-setTimeout(function () {
+// setTimeout(function () {
     console.log('content', content);
     parent.postMessage(content, 'https://localhost.msup.yandex.ru');
-}, 0);
+// }, 0);
