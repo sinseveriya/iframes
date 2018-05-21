@@ -11,19 +11,14 @@ function contentSize() {
 var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
 var eventer = window[eventMethod];
 var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-var content = {};
 
 eventer(messageEvent, function (e) {
-    content.id = e.data;
-    console.log(e);
-    console.log(content.id);
-}, false);
-
-content.height = contentSize();
-
-parent.postMessage('here', 'https://localhost.msup.yandex.ru');
-
-setTimeout(function () {
+    var content = {
+        id: e.dat,
+        height: contentSize()
+    };
+    
     console.log('content', content);
+    
     parent.postMessage(content, 'https://localhost.msup.yandex.ru');
-}, 10);
+}, false);
