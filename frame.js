@@ -9,7 +9,7 @@ var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 
 eventer(messageEvent, function (e) {
     var content = {
-        id: e.data,
+        index: e.data,
         height: contentSize()
     };
     
