@@ -19,11 +19,10 @@ eventer(messageEvent, function (e) {
 }, false);
 
 content.height = contentSize();
-var height = contentSize().toString();
 
 window.parent.postMessage('here', '*');
 
 setTimeout(function () {
     console.log('content', content);
-    window.parent.postMessage(height, '*');
+    window.parent.postMessage(content, '*');
 }, 0);
