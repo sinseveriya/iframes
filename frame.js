@@ -20,9 +20,9 @@ eventer(messageEvent, function (e) {
 
 content.height = contentSize();
 
-window.parent.postMessage('here', '*');
+parent.postMessage('here', '*');
 
 setTimeout(function () {
     console.log('content', content);
-    window.parent.postMessage(content, '*');
+    parent.postMessage(content, '*');
 }, 0);
