@@ -8,22 +8,22 @@ function contentSize() {
     return height;
 };
 
-// var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-// var eventer = window[eventMethod];
-// var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+var eventer = window[eventMethod];
+var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 var content = {};
 
-// eventer(messageEvent, function (e) {
-//     content.id = e.data;
-//     console.log(content.id);
-// }, false);
+eventer(messageEvent, function (e) {
+    content.id = e.data;
+    console.log(content.id);
+}, false);
 
 content.height = contentSize();
 var height = contentSize().toString();
 
-// window.parent.postMessage('here', '*');
+window.parent.postMessage('here', '*');
 
-// setTimeout(function () {
+setTimeout(function () {
     console.log('content', content);
     window.parent.postMessage(height, '*');
-// }, 0);
+}, 0);
