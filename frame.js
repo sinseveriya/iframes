@@ -20,5 +20,5 @@ eventer(messageEvent, function (e) {
     
     console.log('content', content);
     
-    parent.postMessage(content, 'https://localhost.msup.yandex.ru');
+    parent.postMessage(content, '*');
 }, false);
