@@ -1,8 +1,5 @@
 function contentSize() {
-    var body = document.compatMode &&
-    document.compatMode == 'CSS1Compat'
-        ? document.documentElement
-        : document.body;
+    var body = document.body;
 
     var height = Math.max(body.scrollHeight, body.offsetHeight);
     return height;
