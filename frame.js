@@ -15,6 +15,7 @@ var content = {};
 
 eventer(messageEvent, function (e) {
     content.id = e.data;
+    console.log(e);
     console.log(content.id);
 }, false);
 
