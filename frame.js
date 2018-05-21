@@ -1,8 +1,6 @@
 function contentSize() {
-    var body = document.body;
-
-    var height = Math.max(body.scrollHeight, body.offsetHeight);
-    return height;
+    var body = document.documentElement;
+    return Math.max(body.scrollHeight, body.offsetHeight);
 };
 
 var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
@@ -14,8 +12,6 @@ eventer(messageEvent, function (e) {
         id: e.data,
         height: contentSize()
     };
-    
-    console.log('content', content);
     
     parent.postMessage(content, '*');
 }, false);
