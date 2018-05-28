@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>Исследования Яндекса</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://download.yandex.ru/company/figures/css/normalize.css">
+    <link rel="stylesheet" href="css/yaresearch-fonts.css">
+    <link rel="stylesheet" href="css/yaresearch.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <!--<h1 class="header">Заголовок</h1>-->
+    <!--<p class="subheader">Подзаголовок с дополнительной информацией</p>-->
+
+    <ul class="buttons-wrapper">
+        <li class="button button_pressed" data-url="i/method_themes_map_queries.svg">Запросы с точки зрения классификатора</li>
+        <li class="button" data-url="i/method_themes_map_sites.svg">Рунет с точки зрения классификатора</li>
+    </ul>
+
+    <p class="desktop-only">Наведите курсор на тему, чтобы увидеть примеры запросов.</p>
+    <p class="mobile-only">Нажмите на тему, чтобы увидеть примеры запросов.</p>
+
+    <div class="content">
+        <div class="preloader">
+            <div class="preloader_spinner"></div>
+        </div>
+
+        <div class="svg-wrapper"></div>
+
+        <div class="infopane">
+            <div class="infopane__cancel-icon-wrapper">
+                <div class="infopane__cancel-icon"></div>
+            </div>
+            <div class="infopane__text"></div>
+        </div>
+
+    </div>
+
+    <p class="caption">По данным поиска Яндекса, январь-май 2017</p>
+
+    <script src="https://yastatic.net/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://yastatic.net/d3/3.5.12/d3.min.js"></script>
+    <!--<script src="https://yastatic.net/d3/4.5.0/d3.min.js"></script> &lt;!&ndash; d3 v4 &ndash;&gt;-->
+    <script src="js/main.js"></script>
+    <script src="frame.js"></script>
+
+</body>
+</html>
