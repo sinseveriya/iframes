@@ -14,6 +14,6 @@ eventer(messageEvent, function (e) {
         height: contentSize()
     };
     
-    console.log(window);
-    window.parent.postMessage(content, '*');
+    console.log(parent);
+    parent.postMessage(content, '*');
 }, false);
