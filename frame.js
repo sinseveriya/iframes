@@ -8,7 +8,7 @@ var eventer = window[eventMethod];
 var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 
 eventer(messageEvent, function (e) {
-    console.log('12);
+    console.log('12');
     var content = {
         index: e.data,
         height: contentSize()
