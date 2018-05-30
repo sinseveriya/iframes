@@ -15,5 +15,5 @@ eventer(messageEvent, function (e) {
     };
     
     console.log(window);
-    window.postMessage(content, '*');
+    window.parent.postMessage(content, '*');
 }, false);
